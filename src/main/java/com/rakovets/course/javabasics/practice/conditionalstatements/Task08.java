@@ -31,9 +31,7 @@ public class Task08 {
         } else if (typeMob == "SAINT") {
             damage = damage / 2;
             System.out.println(damage);
-        } else if (typeMob == "ANIMAL" || typeMob == "HUMANOID" || typeMob == "PLANT") {
-            System.out.println(damage);
-        } else {
+        } else if (typeMob == "ANIMAL" || typeMob == "HUMANOID" || typeMob == "PLANT" || typeMob == "GHOST") {
             System.out.println(damage);
         }
     }
