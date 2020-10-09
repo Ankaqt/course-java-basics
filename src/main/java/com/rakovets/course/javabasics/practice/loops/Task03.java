@@ -1,5 +1,6 @@
 package com.rakovets.course.javabasics.practice.loops;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -26,5 +27,13 @@ public class Task03 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        int year = 1;
+        while (year <= depositTerm) {
+            double profitOnAnnualDepositPercentPerYear = depositAmount * annualDepositPercent / 100;
+            depositAmount = depositAmount + profitOnAnnualDepositPercentPerYear;
+            year++;
+        }
+        String result = String.format(Locale.ROOT,"%.2f", depositAmount);
+        System.out.println(result);
     }
 }
