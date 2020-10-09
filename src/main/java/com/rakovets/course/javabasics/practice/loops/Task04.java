@@ -1,5 +1,6 @@
 package com.rakovets.course.javabasics.practice.loops;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -27,5 +28,13 @@ public class Task04 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        double health = healthPoints;
+        double time = 1;
+        while (time <= hoursAfterRespawn) {
+            double healthRegeneration = health * regenerationPercentFromCurrentHealth / 100;
+            health = health + healthRegeneration;
+            time ++;
+        }
+        System.out.println(Math.round(health));
     }
 }
