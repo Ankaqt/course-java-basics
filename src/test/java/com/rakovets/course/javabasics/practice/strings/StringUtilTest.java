@@ -96,6 +96,4 @@ public class StringUtilTest {
         Assertions.assertEquals("1110124", stringUtil.getStringOfNumbers( "11q 10d 12g 4ffs"));
         Assertions.assertEquals("123123123", stringUtil.getStringOfNumbers("123a 123a 123"));
     }
-
-
 }
