@@ -1,4 +1,4 @@
-package com.rakovets.course.javabasics.practice.jcf.collection;
+package com.rakovets.course.javabasics.practice.jcf.list;
 import com.rakovets.course.javabasics.practice.jcf.SchoolClass;
 import com.rakovets.course.javabasics.practice.jcf.Student;
 import org.junit.jupiter.api.Test;
